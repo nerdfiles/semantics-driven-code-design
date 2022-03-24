@@ -53,7 +53,7 @@ UML" approach, developers are encouraged to design-as-they-go. Such practice
 should be avoided as it results in low understandability in the design as it 
 is regarded between collaborating developers.
 
-From [Semantics-driven DSL Design][sdsl]:
+From [Semantics-driven DSL Design][sdsld]:
 
 ```
 week52 :: Cal String
@@ -67,6 +67,20 @@ Organic SASS analogues:
 .state-(simulator-running)--[pause]__simulator-pause|do__ {}
 ```
 
+Think of the element re-cast from SDSLD combined with our ABEM naming format so applied to a reference implementation:
+
+```
+<div id="week52" 
+     class="state-(start)--[start]__simulator-running__"
+></div>
+```
+
+For all state diagrams, we can map:
+
+1. `-` to `=`
+2. 2. `--` to `:->` but
+3. when inside parenticals `-` returns `:->`
+
 Compare with yUML implicatures:
 
 ```
@@ -78,5 +92,13 @@ Compare with yUML implicatures:
 We don't have to worry about `:&:` since it represents something like two 
 sibling `<div>`s standing side-by-side in the DOM.
 
-[sdsl]: https://web.engr.oregonstate.edu/~erwig/papers/SemanticDSLDesign-12.pdf "Semantics-Driven DSL Design. Martin Erwig and Eric Walkingshaw. School of EECS, Oregon State University, USA."
+```
+.TYPE-BLOCK--ELEMENT__MODE__ {
+	@include TYPE-BLOCK-ELEMENT-1;
+	@include TYPE-BLOCK-ELEMENT-2;
+  ...
+}
+```
+
+[sdsld]: https://web.engr.oregonstate.edu/~erwig/papers/SemanticDSLDesign-12.pdf "Semantics-Driven DSL Design. Martin Erwig and Eric Walkingshaw. School of EECS, Oregon State University, USA."
 [mixin]: https://krasimir.github.io/organic-css/

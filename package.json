@@ -1,0 +1,20 @@
+{
+  "name": "semantics-driven-code-design",
+  "version": "1.0.0",
+  "description": "Consider these [mixin][mixin] names",
+  "main": "index.js",
+  "scripts": {
+    "publish": "surge --domain fresh-pets.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdfiles/semantics-driven-code-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerdfiles/semantics-driven-code-design/issues"
+  },
+  "homepage": "https://github.com/nerdfiles/semantics-driven-code-design#readme"
+}
