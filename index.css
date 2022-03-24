@@ -1,0 +1,9 @@
+.\(start\)\(PARAM\) {
+  background-color: coral;
+  color: white;
+}
+
+div[class*="start"][class*=":"][class*="PARAM"] {
+  background-color: silver;
+  color: black;
+}
