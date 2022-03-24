@@ -78,5 +78,5 @@ Compare with yUML implicatures:
 We don't have to worry about `:&:` since it represents something like two 
 sibling `<div>`s standing side-by-side in the DOM.
 
-[sdsl]: Semantics-Driven DSL Design. Martin Erwig and Eric Walkingshaw. School of EECS, Oregon State University, USA.
-[mixin]: https://krasimir.github.io/organic-css/
+[sdsl] Semantics-Driven DSL Design. Martin Erwig and Eric Walkingshaw. School of EECS, Oregon State University, USA.
+[mixin] https://krasimir.github.io/organic-css/
